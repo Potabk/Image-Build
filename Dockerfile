@@ -1,6 +1,6 @@
 FROM ascendai/python:3.11-ubuntu22.04
 
-RUN apt-get update -y && apt-get install curl
+RUN apt-get update -y && apt-get install curl -y
 
 # Install kubectl
 RUN curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/${TARGETARCH}/kubectl" \
